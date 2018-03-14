@@ -1,0 +1,18 @@
+{
+    "fields": [
+        "access",
+        "opening_hours",
+        "indoor",
+        "phone"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "terms": [
+        "AED"
+    ],
+   "tags": {
+        "emergency": "defibrillator"
+    },
+    "name": "Defibrillator"
+}

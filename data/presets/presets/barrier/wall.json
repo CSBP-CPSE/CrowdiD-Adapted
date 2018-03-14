@@ -1,0 +1,11 @@
+{
+    "icon": "prison",
+    "geometry": [
+        "line",
+        "area"
+    ],
+    "tags": {
+        "barrier": "wall"
+    },
+    "name": "Wall"
+}

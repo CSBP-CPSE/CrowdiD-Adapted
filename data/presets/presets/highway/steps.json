@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "surface",
+        "lit",
+        "width",
+        "incline_steps",
+        "handrail"
+    ],
+    "icon": "highway-steps",
+    "geometry": [
+        "line"
+    ],
+    "tags": {
+        "highway": "steps"
+    },
+    "terms": [
+        "stairs",
+        "staircase"
+    ],
+    "name": "Steps"
+}

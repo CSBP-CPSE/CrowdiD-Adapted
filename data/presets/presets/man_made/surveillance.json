@@ -1,0 +1,13 @@
+{
+    "icon": "camera",
+    "geometry": [
+        "point"
+    ],
+    "terms": [
+        "cctv"
+    ],
+    "tags": {
+        "man_made": "surveillance"
+    },
+    "name": "Surveillance"
+}

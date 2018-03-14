@@ -1,0 +1,19 @@
+{
+    "icon": "highway-footway",
+    "fields": [
+        "surface",
+        "lit",
+        "width",
+        "structure",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "tags": {
+        "highway": "footway",
+        "footway": "sidewalk"
+    },
+    "terms": [],
+    "name": "Sidewalk"
+}

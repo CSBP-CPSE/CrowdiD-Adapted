@@ -1,0 +1,14 @@
+{
+    "icon": "fire-station",
+    "fields": [
+        "fire_hydrant/type"
+    ],
+    "geometry": [
+        "point",
+        "vertex"
+    ],
+    "tags": {
+        "emergency": "fire_hydrant"
+    },
+    "name": "Fire Hydrant"
+}

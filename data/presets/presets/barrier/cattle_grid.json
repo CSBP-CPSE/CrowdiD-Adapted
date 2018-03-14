@@ -1,0 +1,10 @@
+{
+    "icon": "prison",
+    "geometry": [
+        "vertex"
+    ],
+    "tags": {
+        "barrier": "cattle_grid"
+    },
+    "name": "Cattle Grid"
+}

@@ -1,0 +1,46 @@
+.modal {
+  overflow-y:auto;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-brand {
+  font-size: 20px;
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  line-height: 20px;
+}
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar {
+margin-bottom: 0px;
+font-size: 14px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#locale {
+margin-right: 5px;
+}
+
+.header h3 {
+margin-top:0px;
+font-size:16px;
+}
+
+button {
+color:#333;
+font-weight:bold;
+font-size:12px;
+line-height:20px;
+}
+
+.layer-list label {
+font-weight:normal;
+}

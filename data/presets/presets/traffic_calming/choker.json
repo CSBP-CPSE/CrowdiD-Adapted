@@ -1,0 +1,17 @@
+{
+    "fields": [
+        "parallel_direction"
+    ],
+    "geometry": [
+        "vertex",
+        "line"
+    ],
+    "terms": [
+        "speed",
+        "slow"
+    ],
+    "tags": {
+        "traffic_calming": "choker"
+    },
+    "name": "Traffic Choker"
+}

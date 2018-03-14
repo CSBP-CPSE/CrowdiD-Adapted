@@ -1,0 +1,18 @@
+{
+    "icon": "tennis",
+    "fields": [
+        "surface",
+        "lit",
+        "access_simple"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "leisure": "pitch",
+        "sport": "tennis"
+    },
+    "terms": [],
+    "name": "Tennis Court"
+}

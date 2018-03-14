@@ -1,0 +1,10 @@
+{
+    "icon": "prison",
+    "geometry": [
+        "line"
+    ],
+    "tags": {
+        "barrier": "fence"
+    },
+    "name": "Fence"
+}

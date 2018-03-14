@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Crowdsourcing</title>
+        
+        <link rel='stylesheet' href='css/reset.css'>
+        <link rel='stylesheet' href='css/map.css'>
+        <link rel='stylesheet' href='css/app.css'>
+        
+        
+		<link rel="stylesheet" href="assets/bootstrap-3.3.6/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/mainApp.css">
+
+        <!-- mobile devices -->
+        <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
+        <meta name='apple-mobile-web-app-capable' content='yes' />
+        <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+
+        <script src='dist/iD.js'></script>
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+    <nav role="navigation" class="navbar navbar-default">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="index.html">Crowdsourcing with Statistics Canada</a>
+	        </div>
+
+	        <div class="navbar-collapse collapse">
+	  	  	<ul class="nav navbar-nav navbar-right">
+		  		<li><a id="locale" class="nav navbar-nav navbar-right" href="index-fra.html">Français&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+	  		</ul>
+
+	  		<ul class="nav navbar-nav">
+	          <li><a data-toggle="modal" class="nav navbar-nav navbar-left" href="#info">&nbsp;&nbsp;About</a></li>
+				    <li><a data-toggle="modal" class="nav navbar-nav navbar-left" href="#discl">Terms and conditions</a></li>
+	      </ul>
+	        </div><!--/.navbar-collapse -->
+	        </div>
+	      </nav>
+
+<!-- Modal -->
+<div id="discl" class="modal2 fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Terms and conditions</h3>
+      </div>
+      <div class="modal-body">
+       <p>This is a third party website and not under the control of the Government of Canada.
+      Statistics Canada is not responsible for the accuracy, currency or reliability of the content of this site.
+      This website is not subject to the <a href="http://laws-lois.justice.gc.ca/eng/acts/P-21/index.html">Privacy Act</a> or
+      the <a href="http://laws-lois.justice.gc.ca/eng/acts/O-3.01/">Official Languages Act</a> and may not be accessible to persons
+      with disability.
+
+      <h4>OpenStreetMap</h4>
+      This website is using <a href="http://www.openstreetmap.org/?locale=en-CA#map=13/45.4243/-75.7205">OpenStreetMap (OSM)</a>,
+      a collaborative project to create a free and editable map of the world.
+      We encourage you to read the <a href="http://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
+      terms of use</a> as well as the
+      <a href="http://wiki.osmfoundation.org/wiki/Privacy_Policy">Privacy policy</a>. The licenses information for OSM's data
+      can be found here: <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">Legal FAQ</a>.</p> OSM data is under
+      the <a href="http://opendatacommons.org/licenses/odbl">ODbL</a> license.
+
+      <h4>Accessibility</h4>
+      <p>This is a pilot project developed in collaboration with a community of stakeholders,
+        as such the open source application is in a testing phase and may not fulfil all of the users’ needs.
+        In the event of difficulties using the Web pages or applications, contact us:
+        <a href="mailto:statcan.crowdsource.statcan@canada.ca">Crowdsourcing team</a>.</p>
+        <br>
+	  <p>Date modified: 2016-10-17</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="info" class="modal2 fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Information about the project</h3>
+      </div>
+      <div class="modal-body">
+       <h4>Important note</h4>
+
+      <p>The application is in its beta version. You may have to enable popups for
+      this website to be able to register and login.</p>
+
+	  <h4>Welcome!</h4>
+      <p>We are pleased to have you join us for this new pilot project from Statistics Canada. As a pilot, it is an
+      opportunity to learn how working together could improve national statistics. With this project, we are excited
+      to join the <a href="http://www.openstreetmap.org/?locale=en-CA#map=13/45.4243/-75.7205">OpenStreetMap (OSM)</a> community.</p>
+
+      <p>The pilot is using OSM as an open data platform for inviting contributors to crowdsource information on buildings. The pilot
+      project will focus on the Ottawa-Gatineau region for now. There are currently no accurate national-level statistics on
+      buildings— and their attributes—that can be used to compare specific local areas. The information you submit will help to
+      fill existing data
+      gaps and provide new analytical opportunities that are important to data users.
+
+	 <p>This project will also teach us about the possibilities and limitations of crowdsourcing. Crowdsourcing data collection
+	 may become a way for Statistics Canada and other organizations around the world to collect much-needed information by reaching
+	 out to citizens.</p>
+
+	 <h4>Getting started</h4>
+	 <p>The first thing you can do if you are new to OpenStreetMap is to go to the:
+	 <a href="http://learnosm.org/en/">Beginner's guide</a>. You will need to register to OpenStreetMap to be able
+	 to contribute. The guide explains how. You can start mapping and when you save your changes, you will have to authenticate.</p>
+
+	 <p>The rest is simple: zoom in and explore the map. You can switch from a topographic map to a satellite imagery base.
+	 Click on buildings you know and enter information about them in the form on the left. You can also add new points to add
+	 businesses, shops and services like a post office. Look carefully to make sure that the information is not already there.</p>
+
+	 <h4>Collaborations</h4>
+
+	 <p>This project would not be possible without key collaborations. <a href="http://www.opennorth.ca/">Open North</a> is
+	 collaborating with Statistics Canada for the implementation of this pilot project. Open North is a non-profit organization
+	 with a proven track record nationally and internationally specialized in open data solutions and civic technology tools that
+	 scale both the national and local levels to foster better and more open democracies.</p>
+	 
+	 <p>Mikel Maron and Bryan Housel at <a href="https://www.mapbox.com/">MapBox</a> are providing assistance and advice to the project and the implementation of iD.</p>
+
+	 <p>The <a href="http://ottawa.ca/en">City of Ottawa</a> and the <a href="http://www.openstreetmap.org/wiki/WikiProject_Canada">
+	 OSM Canada</a> community are also key collaborators in this project.</p>
+	 <br>
+	  <p>Date modified: 2016-10-17</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <div id='id-container'></div>
+        <script>
+
+        id = iD.Context()
+            .assetPath('dist/')
+            .locale('en');
+
+        id.ui()(document.getElementById('id-container'), function() {
+		id.map().centerZoom([-75.7106, 45.4241], 12);
+            iD.d3.select('#about-list')
+                .insert('li', '.user-list')
+                .attr('class', 'source-switch')
+                .call(iD.uiSourceSwitch(id)
+                    .keys([
+                        {
+                            'urlroot': 'http://www.openstreetmap.org',
+                            'oauth_consumer_key': 'vipmCfofimB8AAiPYzR77FOMrXoACVYpjuGCNzN2',
+                            'oauth_secret': 'VuaPLj8ckfgTceT3j4JXiNPGGyQHLN0DNVxB7byd'
+                        },
+                        {
+                            'urlroot': 'http://api06.dev.openstreetmap.org',
+                            'oauth_consumer_key': 'vipmCfofimB8AAiPYzR77FOMrXoACVYpjuGCNzN2',
+                            'oauth_secret': 'VuaPLj8ckfgTceT3j4JXiNPGGyQHLN0DNVxB7byd'
+                        }
+                    ])
+                );
+        });
+
+        </script>
+    </body>
+</html>

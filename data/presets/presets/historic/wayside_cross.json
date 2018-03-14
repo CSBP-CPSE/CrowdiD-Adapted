@@ -1,0 +1,12 @@
+{
+    "icon": "religious-christian",
+    "geometry": [
+        "point",
+        "vertex",
+        "area"
+    ],
+    "tags": {
+        "historic": "wayside_cross"
+    },
+    "name": "Wayside Cross"
+}

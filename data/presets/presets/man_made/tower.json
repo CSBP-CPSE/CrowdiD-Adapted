@@ -1,0 +1,15 @@
+{
+    "fields": [
+        "tower/type",
+        "tower/construction",
+        "height"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "tags": {
+        "man_made": "tower"
+    },
+    "name": "Tower"
+}

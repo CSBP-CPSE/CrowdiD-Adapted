@@ -1,0 +1,15 @@
+{
+    "fields": [
+        "crossing",
+        "kerb",
+        "tactile_paving"
+    ],
+    "geometry": [
+        "vertex"
+    ],
+    "tags": {
+        "highway": "crossing"
+    },
+    "terms": [],
+    "name": "Street Crossing"
+}

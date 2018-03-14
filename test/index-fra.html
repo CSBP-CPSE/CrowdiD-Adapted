@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <title>Approche participative</title>
+        
+        <link rel='stylesheet' href='css/reset.css'>
+        <link rel='stylesheet' href='css/map.css'>
+        <link rel='stylesheet' href='css/app.css'>
+
+		<link rel="stylesheet" href="assets/bootstrap-3.3.6/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/mainApp.css">
+
+        <!-- mobile devices -->
+        <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
+        <meta name='apple-mobile-web-app-capable' content='yes' />
+        <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+
+        <script src='dist/iD.js'></script>
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+    <nav role="navigation" class="navbar navbar-default">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="index-fra.html">Approche participative avec Statistique Canada</a>
+	        </div>
+	        
+	        <div class="navbar-collapse collapse">
+	  	  	<ul class="nav navbar-nav navbar-right">
+		  		<li><a id="locale" class="nav navbar-nav navbar-right" href="index.html">English&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+	  		</ul>
+
+	  		<ul class="nav navbar-nav">
+	            <li><a data-toggle="modal" class="nav navbar-nav navbar-left" href="#info" data-toggle="collapse">&nbsp;&nbsp;Info</a></li>
+				<li><a data-toggle="modal" class="nav navbar-nav navbar-left" href="#disclfr">Avis</a></li>
+	          </ul>
+	        </div><!--/.navbar-collapse -->
+	        </div>
+	      </nav>
+
+<!-- Modal -->
+<div id="disclfr" class="modal2 fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Avis</h3>
+      </div>
+      <div class="modal-body">
+       <p>Ceci est un site web de tierce partie et n'est pas sous le contrôle du Gouvernement du Canada. 
+      Statistique Canada n'est pas responsable de l'exactitude, de l'actualité ou de la fiabilité du contenu de ce site.
+      Le présent site web n'est pas soumis à la <a href="http://laws-lois.justice.gc.ca/fra/lois/P-21/index.html">
+      Loi sur la protection des renseignements personnels</a> ou à la<a href="http://laws-lois.justice.gc.ca/fra/lois/O-3.01/">
+      Loi sur les langues officielles</a> et pourrait ne pas être accessible pour les personnes handicapées.
+      
+      <h4>OpenStreetMap</h4>
+      Ce site web utilise <a href="http://www.openstreetmap.org/?locale=fr-CA#map=13/45.4243/-75.7205">OpenStreetMap (OSM)</a>, 
+      un projet de collaboration visant à créer une carte du monde gratuite et modifiable par tous
+      et toujours en évolution. Nous vous encourageons à lire les <a href="http://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
+      conditions d'utilisation (anglais)</a> ainsi que la 
+      <a href="http://wiki.osmfoundation.org/wiki/Privacy_Policy">politique de confidentialité (anglais)</a>. Note: Nous travaillerons
+      avec la Fondation OSM pour traduire ces sections. L'information au sujet des licences pour les données d'OSM 
+      se trouve ici: <a href="http://wiki.openstreetmap.org/wiki/FR:Questions_fr%C3%A9quentes_l%C3%A9gales">
+      Questions fréquentes légales</a>. Les données sont sous la licence 
+      <a href="http://opendatacommons.org/licenses/odbl">ODbL (anglais)</a>.</p> 
+      
+      <h4>Accessibilité</h4>
+      <p>Ceci est un projet pilote élaboré en collaboration avec une collectivité d'intervenants. 
+      En ce moment, l'application libre et ouverte est en période d'essai et peut ne pas remplir les besoins de tous les utilisateurs. 
+      Si vous éprouvez des difficultés en utilisant ce site, veuillez communiquer avec nous:
+        <a href="mailto:statcan.approcheparticipative.statcan@canada.ca">L'équipe de l'approche participative</a>.</p>
+        <br>
+	  <p>Date de modification: 2016-10-17</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="info" class="modal2 fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Information sur le project</h3>
+      </div>
+      <div class="modal-body">
+      <h4>Note importante</h4>
+      
+      <p>Il s’agit de la version bêta de cette application. Vous devrez peut-être activer une fenêtre 
+	  contextuelle afin de pouvoir vous inscrire et vous connecter à ce site Web</p>
+      
+      <h4>Bienvenue!</h4>
+	  
+      <p>Nous sommes ravis de vous compter parmi nous dans le cadre de ce nouveau projet pilote de 
+	  Statistique Canada. 
+	  Ce projet pilote constitue une occasion de prendre conscience que le travail de collaboration 
+	  permet d’améliorer les statistiques nationales.
+      
+	  C'est avec enthousiasme que nous nous joignons à la communauté 
+      <a href="http://www.openstreetmap.org/?locale=fr-CA#map=13/45.4243/-75.7205">OpenStreetMap (OSM)</a> 
+	  dans le cadre de ce projet.</p>
+      
+      <p>Le projet utilise OSM comme plateforme pour inviter les contributeurs à fournir, 
+	  au moyen de l’approche participative, des renseignements sur des immeubles. Pour le moment, le projet pilote 
+	  se concentrera sur la région d’Ottawa–Gatineau. À l’heure actuelle, il n’existe pas de statistiques nationales 
+	  exactes sur les immeubles — et sur leurs attributs — qui peuvent servir à la comparaison des régions particulières. 
+	  Les renseignements que vous fournirez aideront ainsi à combler des lacunes statistiques existantes et à fournir de 
+	  nouvelles possibilités d’analyse qui sont importantes pour les utilisateurs de données.</p>
+
+	  <p>Ce projet nous permettra aussi de découvrir les possibilités et les limites de l’approche participative. 
+	  La collecte de données au moyen de l’approche participative pourrait devenir une façon pour Statistique Canada et 
+	  d’autres organismes partout dans le monde de recueillir des renseignements précieux en faisant appel aux citoyens.</p>
+	  
+	  <h4>Pour commencer</h4>
+	  <p>Si la plateforme OpenStreetMap est nouvelle pour vous, vous pouvez d’abord consulter le 
+	  <a href="http://learnosm.org/fr/">guide du débutant</a>. Vous devrez ensuite vous inscrire sur OpenStreetMap 
+	  afin d’être en mesure de fournir des renseignements. Le guide explique la façon de procéder. Après vous être 
+	  inscrit, vous devez vous connecter lorsque vous démarrez l’application.</p>
+	  
+	  <p>Les étapes suivantes sont assez simples : agrandissez la carte et explorez-la. Vous pouvez changer la carte 
+	  topographique pour une base avec imagerie satellitaire. Cliquez sur les immeubles que vous connaissez et saisissez 
+	  des renseignements à leur sujet dans le formulaire figurant à gauche. Vous pouvez également ajouter des immeubles 
+	  manquants ou de nouveaux points afin d’ajouter des entreprises, des boutiques et des services comme un bureau de 
+	  poste. Regardez attentivement la carte afin d’éviter d’y ajouter des renseignements qui s’y trouvent déjà.</p>
+	  
+	  <h4>Collaborations</h4>
+	  Ce projet ne serait pas possible sans l'aide de collaborateurs clés. <a href="http://www.nordouvert.ca">Nord Ouvert</a>
+	  collabore avec Statistique Canada pour mettre en œuvre ce projet pilote. NordOuvert, un organisme sans but lucratif, 
+	  possède une expérience reconnue à l’échelle nationale et internationale et offre une variété de solutions de 
+	  données ouvertes et d’outils de technologies civiques adaptés au niveau local et national afin d’améliorer 
+	  les démocraties et de les rendre plus ouvertes.</p> 
+	  
+	  <p>Mikel Maron et Bryan Housel de <a href="https://www.mapbox.com/">MapBox</a> collaborent en fournissant conseils et assistance au projet et pour le développement d'iD pour le projet.</p>
+	  
+	  <p>La <a href="http://ottawa.ca/fr">Ville d'Ottawa</a> ainsi que la communauté 
+	  <a href="http://www.openstreetmap.org/wiki/FR:WikiProject_Canada">OSM Canada</a> sont également des collaborateurs 
+	  clés à ce projet.</p>
+	  <br>
+	  <p>Date de modification: 2016-10-17</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+        <div id='id-container'></div>
+        
+        <script>		 
+	
+        id = iD.Context()
+            .assetPath('dist/')
+            .locale('fr');
+
+        id.ui()(document.getElementById('id-container'), function() {
+		id.map().centerZoom([-75.7106, 45.4241], 12);
+            iD.d3.select('#about-list')
+                .insert('li', '.user-list')
+                .attr('class', 'source-switch')
+                .call(iD.uiSourceSwitch(id)
+                    .keys([
+                        {
+                            'urlroot': 'http://www.openstreetmap.org',
+                            'oauth_consumer_key': 'vipmCfofimB8AAiPYzR77FOMrXoACVYpjuGCNzN2',
+                            'oauth_secret': 'VuaPLj8ckfgTceT3j4JXiNPGGyQHLN0DNVxB7byd'
+                        },
+                        {
+                            'urlroot': 'http://api06.dev.openstreetmap.org',
+                            'oauth_consumer_key': 'vipmCfofimB8AAiPYzR77FOMrXoACVYpjuGCNzN2',
+                            'oauth_secret': 'VuaPLj8ckfgTceT3j4JXiNPGGyQHLN0DNVxB7byd'
+                        }
+                    ])
+                );
+        });
+                
+       
+                
+        </script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "icon": "roadblock",
+    "geometry": [
+        "line",
+        "area"
+    ],
+    "tags": {
+        "barrier": "ditch"
+    },
+    "name": "Trench"
+}
