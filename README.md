@@ -11,4 +11,4 @@ This is the next version of iD for the project Crowdsourcing buildings with Stat
 ## License
 
 iD is available under the [ISC License](https://opensource.org/licenses/ISC).
-It includes [d3.js](http://d3js.org/), which BSD-licensed.
+It includes [d3.js](http://d3js.org/), which is BSD-licensed.
