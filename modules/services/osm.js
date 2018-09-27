@@ -18,8 +18,8 @@ var dispatch = d3.dispatch('authLoading', 'authDone', 'change', 'loading', 'load
     tileZoom = 16,
     oauth = osmAuth({
         url: urlroot,
-         oauth_consumer_key: 'vipmCfofimB8AAiPYzR77FOMrXoACVYpjuGCNzN2',
-         oauth_secret: 'VuaPLj8ckfgTceT3j4JXiNPGGyQHLN0DNVxB7byd',
+         oauth_consumer_key: 'xN0xZlTB7kEX1Sha8PJO1CUWgVnGkfp0xGC0cOgm',
+         oauth_secret: 'SJR5iIV3tqCoGO7aP7ZXCWPByLM67CrRmsrBsiEl',
         loading: authLoading,
         done: authDone
     }),
